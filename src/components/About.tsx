@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { DollarSign, Zap, Smartphone, Sparkles } from "lucide-react";
+import aboutIllustration from "@/assets/about-illustration.jpg";
 
 const About = () => {
   const features = [
@@ -32,17 +33,36 @@ const About = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Why Choose BizConnect
           </h2>
+        </div>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          {/* Illustration */}
+          <div className="order-2 lg:order-1 flex justify-center">
+            <div className="relative">
+              <img 
+                src={aboutIllustration} 
+                alt="Professional web development illustration" 
+                className="rounded-2xl shadow-elegant max-w-full h-auto"
+              />
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-primary rounded-full opacity-20 animate-pulse"></div>
+            </div>
+          </div>
           
-          <div className="max-w-4xl mx-auto">
-            <p className="text-lg sm:text-xl text-muted-foreground mb-8 leading-relaxed">
-              Hi, I'm <span className="font-semibold text-primary">Randeepa Ariyawansa</span>, 
-              the founder of BizConnect. I help businesses and individuals bring their ideas to life online.
-            </p>
-            
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              A website is more than just design—it's your digital identity. My mission is to create 
-              professional, responsive, and SEO-friendly websites that attract customers and grow your business.
-            </p>
+          {/* Text Content */}
+          <div className="order-1 lg:order-2 space-y-6">
+            <div>
+              <h3 className="text-2xl font-bold text-foreground mb-4">
+                Hi, I'm Randeepa Ariyawansa, founder of BizConnect
+              </h3>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                I help businesses and individuals bring their ideas to life online. 
+                A website is more than just design—it's your digital identity.
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                My mission is to create professional, responsive, and SEO-friendly websites that 
+                attract customers and grow your business.
+              </p>
+            </div>
           </div>
         </div>
         

@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Phone, Linkedin, Instagram, Facebook, Send } from "lucide-react";
+import contactIllustration from "@/assets/contact-illustration.jpg";
 
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -57,9 +58,21 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          {/* Contact Illustration */}
+          <div className="lg:col-span-1 flex justify-center items-start">
+            <div className="relative">
+              <img 
+                src={contactIllustration} 
+                alt="Contact and communication illustration" 
+                className="rounded-2xl shadow-elegant max-w-full h-auto"
+              />
+              <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-primary rounded-full opacity-30 animate-ping"></div>
+            </div>
+          </div>
+          
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="lg:col-span-1 space-y-8">
             <Card className="bg-gradient-card border-0 shadow-soft">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-foreground flex items-center">
@@ -108,55 +121,57 @@ const Contact = () => {
           </div>
           
           {/* Contact Form */}
-          <Card className="bg-gradient-card border-0 shadow-soft">
-            <CardHeader>
-              <CardTitle className="text-2xl font-bold text-foreground">Send us a Message</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name">Name</Label>
-                  <Input 
-                    id="name" 
-                    placeholder="Your full name" 
-                    required 
-                    className="border-border/20 focus:border-primary"
-                  />
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input 
-                    id="email" 
-                    type="email" 
-                    placeholder="your.email@example.com" 
-                    required 
-                    className="border-border/20 focus:border-primary"
-                  />
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Tell us about your project..." 
-                    rows={4}
-                    required 
-                    className="border-border/20 focus:border-primary resize-none"
-                  />
-                </div>
-                
-                <Button 
-                  type="submit" 
-                  className="w-full bg-gradient-primary hover:shadow-glow transition-smooth group"
-                  size="lg"
-                >
-                  Get in Touch Today
-                  <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-smooth" />
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+          <div className="lg:col-span-1">
+            <Card className="bg-gradient-card border-0 shadow-soft">
+              <CardHeader>
+                <CardTitle className="text-2xl font-bold text-foreground">Send us a Message</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div className="space-y-2">
+                    <Label htmlFor="name">Name</Label>
+                    <Input 
+                      id="name" 
+                      placeholder="Your full name" 
+                      required 
+                      className="border-border/20 focus:border-primary"
+                    />
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <Label htmlFor="email">Email</Label>
+                    <Input 
+                      id="email" 
+                      type="email" 
+                      placeholder="your.email@example.com" 
+                      required 
+                      className="border-border/20 focus:border-primary"
+                    />
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <Label htmlFor="message">Message</Label>
+                    <Textarea 
+                      id="message" 
+                      placeholder="Tell us about your project..." 
+                      rows={4}
+                      required 
+                      className="border-border/20 focus:border-primary resize-none"
+                    />
+                  </div>
+                  
+                  <Button 
+                    type="submit" 
+                    className="w-full bg-gradient-primary hover:shadow-glow transition-smooth group text-primary-foreground"
+                    size="lg"
+                  >
+                    Get in Touch Today
+                    <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-smooth" />
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>

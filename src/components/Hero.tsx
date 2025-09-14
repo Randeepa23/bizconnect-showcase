@@ -31,9 +31,12 @@ const Hero = () => {
           size="lg" 
           variant="secondary"
           className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-4 text-lg rounded-lg shadow-glow hover:shadow-soft transition-smooth group animate-scale-in"
+          asChild
         >
-          Get Started Today
-          <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-smooth" />
+          <a href="mailto:avithariyawansa207@gmail.com?subject=Website%20Development%20Inquiry&body=Hi%20Randeepa,%0A%0AI'm%20interested%20in%20creating%20a%20website%20for%20my%20business.%20Please%20get%20in%20touch%20with%20me.%0A%0AThank%20you!">
+            Get Started Today
+            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-smooth" />
+          </a>
         </Button>
       </div>
       
