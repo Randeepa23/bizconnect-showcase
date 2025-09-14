@@ -21,9 +21,9 @@ const Hero = () => {
           {/* Text Content - Left Side */}
           <div className="text-center lg:text-left space-y-8">
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-tight animate-fade-in drop-shadow-lg">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-white leading-tight drop-shadow-lg">
                 Grow Your Business with a{" "}
-                <span className="bg-gradient-to-r from-yellow-300 via-orange-400 to-red-400 bg-clip-text text-transparent animate-pulse font-black drop-shadow-lg">
+                <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-black">
                   Professional Website!
                 </span>
               </h1>
@@ -50,7 +50,7 @@ const Hero = () => {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="border-2 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-semibold px-8 py-4 text-lg rounded-xl backdrop-blur-sm hover:scale-105 transition-all duration-300 group"
+                className="border-2 border-white/50 text-white hover:bg-white/10 font-semibold px-8 py-4 text-lg rounded-xl backdrop-blur-sm hover:scale-105 transition-all duration-300 group"
                 asChild
               >
                 <a href="#portfolio">
@@ -61,7 +61,7 @@ const Hero = () => {
             </div>
             
             {/* Trust Indicators */}
-            <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-primary-foreground/80 text-sm animate-fade-in">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-white/80 text-sm animate-fade-in">
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
                 <span>Fast Delivery</span>
@@ -111,11 +111,11 @@ const Hero = () => {
       </div>
       
       {/* Enhanced Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-primary-foreground/70 animate-bounce">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/70 animate-bounce">
         <div className="flex flex-col items-center space-y-2">
           <span className="text-xs uppercase tracking-wider">Scroll Down</span>
-          <div className="w-6 h-10 border-2 border-primary-foreground/30 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-primary-foreground/50 rounded-full mt-2 animate-pulse"></div>
+          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
           </div>
         </div>
       </div>
