@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-bg.jpg";
+import heroIllustration from "@/assets/hero-illustration.jpg";
 
 const Hero = () => {
   return (
@@ -27,17 +28,29 @@ const Hero = () => {
           that help your business stand out online.
         </p>
         
-        <Button 
-          size="lg" 
-          variant="secondary"
-          className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-4 text-lg rounded-lg shadow-glow hover:shadow-soft transition-smooth group animate-scale-in"
-          asChild
-        >
-          <a href="mailto:avithariyawansa207@gmail.com?subject=Website%20Development%20Inquiry&body=Hi%20Randeepa,%0A%0AI'm%20interested%20in%20creating%20a%20website%20for%20my%20business.%20Please%20get%20in%20touch%20with%20me.%0A%0AThank%20you!">
-            Get Started Today
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-smooth" />
-          </a>
-        </Button>
+        <div className="flex flex-col items-center space-y-8">
+          <Button 
+            size="lg" 
+            variant="secondary"
+            className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-4 text-lg rounded-lg shadow-glow hover:shadow-soft transition-smooth group animate-scale-in"
+            asChild
+          >
+            <a href="mailto:avithariyawansa207@gmail.com?subject=Website%20Development%20Inquiry&body=Hi%20Randeepa,%0A%0AI'm%20interested%20in%20creating%20a%20website%20for%20my%20business.%20Please%20get%20in%20touch%20with%20me.%0A%0AThank%20you!">
+              Get Started Today
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-smooth" />
+            </a>
+          </Button>
+          
+          {/* Hero Illustration */}
+          <div className="relative mt-12 max-w-2xl mx-auto">
+            <img 
+              src={heroIllustration} 
+              alt="Professional website development workspace" 
+              className="rounded-2xl shadow-elegant w-full h-auto animate-fade-in"
+            />
+            <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-gradient-primary rounded-full opacity-30 animate-pulse"></div>
+          </div>
+        </div>
       </div>
       
       {/* Scroll Indicator */}

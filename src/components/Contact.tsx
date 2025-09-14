@@ -162,11 +162,11 @@ const Contact = () => {
                   
                   <Button 
                     type="submit" 
-                    className="w-full bg-gradient-primary hover:shadow-glow transition-smooth group text-primary-foreground"
+                    className="w-full bg-gradient-primary hover:shadow-glow transition-smooth group"
                     size="lg"
                   >
-                    Get in Touch Today
-                    <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-smooth" />
+                    <span className="text-primary-foreground">Get in Touch Today</span>
+                    <Send className="ml-2 h-4 w-4 text-primary-foreground group-hover:translate-x-1 transition-smooth" />
                   </Button>
                 </form>
               </CardContent>

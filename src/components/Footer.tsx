@@ -6,7 +6,7 @@ const Footer = () => {
           <div className="mb-6">
             <h3 className="text-2xl font-bold mb-2">BizConnect</h3>
             <p className="text-primary-foreground/80 max-w-md mx-auto leading-relaxed">
-              Built with ❤️ by Randeepa Ariyawansa to help your business grow online.
+              Built by Randeepa Ariyawansa to help your business grow online.
             </p>
           </div>
           

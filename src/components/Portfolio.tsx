@@ -4,6 +4,7 @@ import { ExternalLink } from "lucide-react";
 import portfolioRio from "@/assets/portfolio-rio.jpg";
 import portfolioLuxury from "@/assets/portfolio-luxury.jpg";
 import portfolioMap from "@/assets/portfolio-map.jpg";
+import portfolioIllustration from "@/assets/portfolio-illustration.jpg";
 
 const Portfolio = () => {
   const projects = [
@@ -37,9 +38,19 @@ const Portfolio = () => {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Our Work
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
             See how we've helped businesses create stunning online presences
           </p>
+          
+          {/* Portfolio Illustration */}
+          <div className="relative max-w-xl mx-auto mb-12">
+            <img 
+              src={portfolioIllustration} 
+              alt="Professional portfolio showcase with successful projects" 
+              className="rounded-2xl shadow-elegant w-full h-auto"
+            />
+            <div className="absolute -top-4 -left-4 w-16 h-16 bg-gradient-primary rounded-full opacity-20 animate-ping"></div>
+          </div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
