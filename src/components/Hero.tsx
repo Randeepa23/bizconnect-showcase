@@ -21,14 +21,14 @@ const Hero = () => {
           {/* Text Content - Left Side */}
           <div className="text-center lg:text-left space-y-8">
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary-foreground leading-tight animate-fade-in">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black text-primary-foreground leading-tight animate-fade-in drop-shadow-lg">
                 Grow Your Business with a{" "}
-                <span className="bg-gradient-to-r from-accent via-accent/90 to-accent/70 bg-clip-text text-transparent animate-pulse">
+                <span className="bg-gradient-to-r from-accent via-accent/90 to-accent/70 bg-clip-text text-transparent animate-pulse font-black drop-shadow-lg">
                   Professional Website!
                 </span>
               </h1>
               
-              <p className="text-lg sm:text-xl lg:text-2xl text-primary-foreground/90 leading-relaxed max-w-2xl animate-fade-in">
+              <p className="text-xl sm:text-2xl lg:text-3xl text-primary-foreground font-semibold leading-relaxed max-w-2xl animate-fade-in drop-shadow-md bg-black/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
                 At BizConnect, we create modern, user-friendly, and affordable websites 
                 that help your business stand out online.
               </p>
